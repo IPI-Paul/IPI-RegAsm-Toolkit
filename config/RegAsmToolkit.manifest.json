@@ -1,0 +1,17 @@
+{
+    "name": "RegAsmToolkit",
+    "version": "1.0.0",
+    "engine": "RegAsm.Engine.psm1",
+
+    "features": {
+        "gui": true,
+        "cli": true,
+        "undoGeneration": true,
+        "pathRewrite": true
+    },
+
+    "runtime": {
+        "useRunspaces": true,
+        "maxThreads": 4
+    }
+}

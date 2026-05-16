@@ -1,0 +1,53 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        Title="IPI RegAsm Toolkit"
+        Height="600"
+        Width="900">
+    <Grid Margin="2">
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,1">
+                <TextBox Name="DllBox" Width="858" Margin="0,0,1,0" />
+                <Button Content="..." Name="btnLibrary" Width="20" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,1">
+                <TextBox Name="OutputBox" Width="858" Margin="0,0,1,0" />
+                <Button Content="..." Name="btnBrowse" Width="20" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Name="FindBox" Width="858" Margin="0,0,1,0" />
+                <Button Content="..." Name="btnFind" Width="20" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,1">
+                <TextBox Name="ReplaceBox" Width="858" Margin="0,0,1,0" />
+                <Button Content="..." Name="btnReplace" Width="20" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,1">
+                <Label Name="StatusLabel"
+                    Width="667"
+                    Content="Status: Idle"
+                    FontWeight="Bold" />
+                <ComboBox Name="ModeBox" SelectedIndex="0" Width="80" Margin="1,1">
+                    <ComboBoxItem Content="Full" />
+                    <ComboBoxItem Content="PathOnly" />
+                    <ComboBoxItem Content="Diff" />
+                </ComboBox>            
+                <ComboBox Name="RunBox" Width="130" SelectedIndex="0" Margin="0,1">
+                    <ComboBoxItem Content="" />
+                    <ComboBoxItem Content="Author Repository" />
+                    <ComboBoxItem Content="Clear Log" />
+                    <ComboBoxItem Content="Backup DLL Registry" />
+                    <ComboBoxItem Content="Export Registry by DLL" />
+                    <ComboBoxItem Content="Register DLL" />
+                    <ComboBoxItem Content="Unregister DLL" />
+                    <ComboBoxItem Content="Save Log" />
+                    <ComboBoxItem Content="Selections - Load" />
+                    <ComboBoxItem Content="Selections - Save" />
+                </ComboBox>
+            </StackPanel>
+            <RichTextBox Name="LogBox"
+                Height="440"
+                IsReadOnly="True"
+                IsEnabled="True"
+                VerticalScrollBarVisibility="Auto"/>
+        </StackPanel>
+    </Grid>
+</Window>        

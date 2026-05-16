@@ -1,0 +1,5 @@
+{
+    "outputFolder": "./outputs/exports",
+    "logFolder": "./outputs/logs",
+    "savedFolder": "./outputs/saved"
+}
